@@ -4,7 +4,7 @@ Calculator application made to make sum and minus operation with two values in a
 
 ## How to use
 
-Compile and run the application, then use numbers and double values in fields "Campo A" and "Campo B" and press the button "Sum" or "Minus" to show the result on the application.
+Compile and run the application, then access the following URL ``http://localhost:8080/calculator`` and use numbers and double values in fields "Campo A" and "Campo B" and press the button "Somar" or "Subtrair" to show the result on the application.
 
 ## Project's structure
 

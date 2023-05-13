@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>App Calculadora</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body bgcolor="#F1F1F1">
+
+<form action="#" th:action="@{/calculator}" th:object="${calculatorModel}" method="POST">
+
+    <h1 align="center">Calculadora</h1>
+    <label>Campo A</label> <input type="text" th:field="*{valueA}"/>
+    </br>
+    </br>
+    <label>Campo B</label> <input type="text" th:field="*{valueB}"/>
+    <p>
+        <input type="submit" class="button" name="sum" value="Somar"/>
+        <input type="submit" class="button" name="minus" value="Subtrair"/>
+    </p>
+    <h1><p th:text="${result}"/></h1>
+</form>
+</body>
+</html>

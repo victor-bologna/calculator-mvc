@@ -4,8 +4,6 @@ import com.victor.model.CalculatorModel;
 import com.victor.service.CalculatorService;
 import org.springframework.stereotype.Service;
 
-import javax.swing.*;
-
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
     @Override
@@ -29,11 +27,8 @@ public class CalculatorServiceImpl implements CalculatorService {
     }
 
     private boolean validateNumbers(String valueA, String valueB) {
-        String regex = "\\d+\\.?\\d*";
-        if(!valueA.matches(regex) || !valueB.matches(regex)) {
-            return false;
-        }
-        return true;
+        String regex = "-?\\d+\\.?\\d*";
+        return valueA.matches(regex) && valueB.matches(regex);
     }
 
     private String formatResult(Double result) {
